@@ -2,16 +2,26 @@
 	width: 200px;
 	height: 250px;
 	margin: 0 auto;
+	overflow: hidden;
+}
+
+.item:hover{
+	cursor: pointer;
+	background-color: #B9DCF1;
 }
 
 .item-foto{
 	width: 100%;
 	height: auto;
+	margin-top: 5px;
 	text-align: center;
 }
 
 .item-foto > img{
 	border: 0;
+}
+
+.item-foto:hover > img{
 }
 
 .item-details{
