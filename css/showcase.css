@@ -34,17 +34,17 @@
 
 .showcase-content > div{
 	float: left;
+	height: 100%;
+	padding: 15px 0;
 }
 
 .visited-product{
 	width: 20%;
-	height: 100%;
 	border: 1px solid red;
 }
 
 .recommended-products{
 	width: 77%;
-	height: 100%;
 	margin-left: 10px;
 
 	border: 1px solid black;
