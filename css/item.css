@@ -5,7 +5,7 @@
 	overflow: hidden;
 }
 
-.item:hover{
+.item:hover, .item-selected{
 	cursor: pointer;
 	background-color: #B9DCF1;
 }
