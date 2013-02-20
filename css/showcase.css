@@ -24,3 +24,28 @@
 
 .title > span{
 }
+
+/******** products ********/
+.showcase-content{
+	width: 100%;
+	height: 315px;
+	overflow: hidden;
+}
+
+.showcase-content > div{
+	float: left;
+}
+
+.visited-product{
+	width: 20%;
+	height: 100%;
+	border: 1px solid red;
+}
+
+.recommended-products{
+	width: 77%;
+	height: 100%;
+	margin-left: 10px;
+
+	border: 1px solid black;
+}
