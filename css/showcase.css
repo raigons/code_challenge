@@ -34,7 +34,7 @@
 
 .showcase-content > div{
 	float: left;
-	height: 100%;
+	height: auto;
 	padding: 15px 0;
 }
 
@@ -44,8 +44,25 @@
 }
 
 .recommended-products{
-	width: 77%;
-	margin-left: 10px;
+	width: 70%;
+	height: auto;
+	margin-left: 5%;
+	overflow: hidden;
 
 	border: 1px solid black;
+}
+
+.recommended-products > ul{
+	/*position: absolute;*/
+	overflow: hidden;
+	width: 80.5%;
+	border: 1px solid black;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.recommended-products ul li{
+	float: left;
+	height: 250px;
+	width: 200px;
 }
