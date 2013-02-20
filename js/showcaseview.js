@@ -1,5 +1,5 @@
 ;
-(function(window, jQuery){
+(function(window, $){
 	
 	window.ShowcaseView = function($showcaseElement){
 		var api 		   = {},

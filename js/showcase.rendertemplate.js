@@ -22,10 +22,11 @@
 		};
 
 		var formatItemName = function(itemName){
-			var splitSpaces = itemName.split(" ");
-			if(splitSpaces.length > 13){
+			var splitSpaces = itemName.split(" "),
+				tokenNumber = 12;
+			if(splitSpaces.length > tokenNumber){
 				var newName = "";
-				for(var i = 0; i < 13; i++){
+				for(var i = 0; i < tokenNumber; i++){
 					newName += " " + splitSpaces[i];
 				}
 				newName += " ...";
