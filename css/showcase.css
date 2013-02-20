@@ -45,7 +45,7 @@
 }
 
 .visited-product{
-	width: 18%;
+	width: auto;
 	border: 1px solid red;
 }
 
