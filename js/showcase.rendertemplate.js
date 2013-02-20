@@ -6,11 +6,18 @@
 			$el = $showcaseElement;
 
 		api.renderVisitedItem = function(item){
-			item.name = formatItemName(item.name);
 			renderItem(item, $el.find(".visited-product"));
 		};
 
+		api.renderListItems = function(items){
+			$.each(items, function(i, item){
+				item.isList = true;
+				renderItem(item, $el.find("#recommended-products-list"));
+			});
+		};
+
 		var renderItem = function(item, $to){
+			item.name = formatItemName(item.name);
 			$("#itemTemplate").tmpl(item).appendTo($to);	
 		};
 
