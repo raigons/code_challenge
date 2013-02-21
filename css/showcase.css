@@ -64,6 +64,40 @@
 	border: 1px solid black;
 }
 
+.recommended-products > div{
+	/*position: relative;*/
+	float: left;
+}
+
+.div-list{
+	width: 85%;
+	overflow: hidden;
+}
+
+.recommended-products .navigator{
+	width: 5%;
+	height: 250px;
+	text-align: center;
+	padding-top: 113px;
+	border: 1px solid black;
+	
+
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/*margin-top: 13%;*/
+}
+
+.link-prev{
+	margin-left: 10px;
+}
+
+.link-next{
+	margin-left: 15px;
+}
+
 .recommended-products > ul{
 	/*position: absolute;*/
 	overflow: hidden;
@@ -77,4 +111,8 @@
 	float: left;
 	height: 250px;
 	width: 200px;
+}
+
+.jcarousel-prev, .jcarousel-next{
+	display: none!important;
 }
