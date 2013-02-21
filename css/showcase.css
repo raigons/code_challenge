@@ -79,23 +79,42 @@
 	height: 250px;
 	text-align: center;
 	padding-top: 113px;
-	border: 1px solid black;
-	
 
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	/*margin-top: 13%;*/
 }
 
 .link-prev{
 	margin-left: 10px;
 }
 
+.recommended-products .navigator span{
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	height: 32px;
+	width: 32px;
+	background-position: -64px 0;
+}
+
+.link-prev span{
+	background-image: url(../images/prev-horizontal.png);
+}
+
 .link-next{
 	margin-left: 15px;
+}
+
+.link-next span{
+	background-image: url(../images/next-horizontal.png);
+}
+
+.recommended-products .navigator span:hover{
+	cursor: pointer;
+	background-position: -32px 0;
 }
 
 .recommended-products > ul{
