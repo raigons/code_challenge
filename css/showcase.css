@@ -98,6 +98,11 @@
 	background-position: -64px 0;
 }
 
+.recommended-products .navigator span.disabled{
+	background-position: -96px 0 !important;
+	cursor: default !important;
+}
+
 .link-prev span{
 	background-image: url(../images/prev-horizontal.png);
 }

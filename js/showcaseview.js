@@ -20,10 +20,31 @@
 			getItems().then(api.renderValues);
 		};
 
+		api.togglePrevButton = function(carousel, button, enabled){
+			var className = ".prev";
+			enabled ? api.enable(className) : api.disable(className);
+		};
+
+		api.enable = function(className){
+			$showcaseElement.find(className).removeClass("disabled");
+		};
+
+		api.disable = function(className){
+			$showcaseElement.find(className).addClass("disabled");
+		};
+
+		api.toggleNextButton = function(carousel, button, enabled){
+			var className = ".next";
+			enabled ? api.enable(className) : api.disable(className);
+		};
+
 		api.initCarousel = function(){
 			$showcaseElement.find("#recommended-products-list").jcarousel({
 				'buttonPrevHTML': "<span class='carousel-prev'>Prev</span>",
-				'buttonNextHTML': "<span class='carousel-next'>Next</span>"
+				'buttonNextHTML': "<span class='carousel-next'>Next</span>",
+
+				buttonPrevCallback:   api.togglePrevButton,
+				buttonNextCallback:   api.toggleNextButton
 			});
 		};
 
