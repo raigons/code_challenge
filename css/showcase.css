@@ -51,21 +51,19 @@
 }
 
 .visited-product{
-	width: auto;
-	border: 1px solid red;
+    border-right: 2px solid #CCCCCC;
+    margin-top: 5px;
+    width: 230px;
 }
 
 .recommended-products{
-	width: 70%;
+	width: 78%;
 	height: auto;
 	margin-left: 3%;
 	overflow: hidden;
-
-	border: 1px solid black;
 }
 
 .recommended-products > div{
-	/*position: relative;*/
 	float: left;
 }
 
@@ -118,10 +116,8 @@
 }
 
 .recommended-products > ul{
-	/*position: absolute;*/
 	overflow: hidden;
-	width: 80.5%;
-	border: 1px solid black;
+	width: 90%;
 	margin: 0 auto;
 	list-style: none;
 }
