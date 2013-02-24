@@ -60,7 +60,6 @@
 			var config = {};
 			config.url = "https://tools.chaordicsystems.com/challenge/?callback=X";
 			config.dataType = "jsonp";
-			config.async = false;
 
 			return $.ajax(config);
 		};
